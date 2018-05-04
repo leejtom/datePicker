@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "JTDatePickManager.h"
-#import "JTDatePickerViewController.h"
 
 @interface ViewController ()<JTDatePickerDelegate, JTStarAndEndTimePickerDelegate>
 
@@ -23,7 +22,7 @@
 - (IBAction)yearMonthDayWeekAction:(UIButton *)sender {
 	JTDatePickManager *datePickManager = [[JTDatePickManager alloc] initWithPickerModel:JTDatePickerModeDateAndWeekday];
 	JTDatePicker *datePicker = datePickManager.datePicker;
-	datePicker.delegatePicker = self;
+	datePicker.delegate = self;
 	[self presentViewController:datePickManager animated:YES completion:nil];
 }
 
@@ -39,6 +38,7 @@
 	NSLog(@"dateString：%@", components);
 }
 
+#pragma mark - JTStarAndEndTimePickerDelegate
 - (void)datePicker:(JTStarAndEndTimePicker *)datePicker didSelectSartDateComponents:(NSDateComponents *)startCompon endDateComponents:(NSDateComponents *)endCompon{
 	NSLog(@"%02zd:%02zd - %02zd:%02zd", startCompon.hour, startCompon.minute, endCompon.hour, endCompon.minute);
 }

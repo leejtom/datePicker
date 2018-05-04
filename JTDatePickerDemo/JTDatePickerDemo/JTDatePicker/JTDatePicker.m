@@ -48,14 +48,14 @@
 }
 
 - (void)tapSelectedHandler{
-	if (self.delegatePicker && [self.delegatePicker respondsToSelector:@selector(datePicker:didSelectDateComponents:)]) {
+	if (_delegate && [_delegate respondsToSelector:@selector(datePicker:didSelectDateComponents:)]) {
 		
 		NSArray *array = [self.selectedDate componentsSeparatedByString:@" "];
 		if (array.count ==2) {
 			NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 			formatter.dateFormat = @"yyyy年MM月dd日";
 			NSDate *date = [formatter dateFromString:array[0]];
-			[self.delegatePicker datePicker:self didSelectDateComponents:[self.calendar components:self.unitFlags fromDate:date]];
+			[_delegate datePicker:self didSelectDateComponents:[self.calendar components:self.unitFlags fromDate:date]];
 		}
 	}
 	

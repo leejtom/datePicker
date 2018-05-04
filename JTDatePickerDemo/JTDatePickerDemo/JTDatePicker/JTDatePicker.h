@@ -15,7 +15,7 @@
 
 @interface JTDatePicker : UIView<UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (nonatomic, weak) id<JTDatePickerDelegate> delegatePicker;
+@property (nonatomic, weak) id<JTDatePickerDelegate> delegate;
 
 @property (nonatomic, strong) NSDate *minimumDate;
 @property (nonatomic, strong) NSDate *maximumDate;

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5506016E209C394C00D9453E /* JTDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5506016D209C394C00D9453E /* JTDatePickerViewController.m */; };
 		554C903C2092D4FE00ABFFEF /* JTStarAndEndTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 554C903B2092D4FE00ABFFEF /* JTStarAndEndTimePicker.m */; };
 		554C90432093299400ABFFEF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 554C90422093299400ABFFEF /* libz.tbd */; };
 		554C90452093299C00ABFFEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554C90442093299C00ABFFEF /* CoreGraphics.framework */; };
@@ -30,8 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5506016C209C394C00D9453E /* JTDatePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTDatePickerViewController.h; sourceTree = "<group>"; };
-		5506016D209C394C00D9453E /* JTDatePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTDatePickerViewController.m; sourceTree = "<group>"; };
 		554C903A2092D4FE00ABFFEF /* JTStarAndEndTimePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTStarAndEndTimePicker.h; sourceTree = "<group>"; };
 		554C903B2092D4FE00ABFFEF /* JTStarAndEndTimePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTStarAndEndTimePicker.m; sourceTree = "<group>"; };
 		554C903E2092FF8200ABFFEF /* JTDatePickerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTDatePickerHeader.h; sourceTree = "<group>"; };
@@ -123,8 +120,6 @@
 				55D47BA4209069FC006AF965 /* LaunchScreen.storyboard */,
 				55D47BA7209069FC006AF965 /* Info.plist */,
 				55D47BA8209069FC006AF965 /* main.m */,
-				5506016C209C394C00D9453E /* JTDatePickerViewController.h */,
-				5506016D209C394C00D9453E /* JTDatePickerViewController.m */,
 			);
 			path = JTDatePickerDemo;
 			sourceTree = "<group>";
@@ -250,7 +245,6 @@
 				554C903C2092D4FE00ABFFEF /* JTStarAndEndTimePicker.m in Sources */,
 				55D47BBF20906B47006AF965 /* JTDatePicker.m in Sources */,
 				55D47BC220906B47006AF965 /* JTDatePickManager.m in Sources */,
-				5506016E209C394C00D9453E /* JTDatePickerViewController.m in Sources */,
 				55D47BC120906B47006AF965 /* JTDatePickerHeaderView.m in Sources */,
 				55D47BBE20906B47006AF965 /* JTDateCommon.m in Sources */,
 				55D47B9B209069F2006AF965 /* AppDelegate.m in Sources */,
