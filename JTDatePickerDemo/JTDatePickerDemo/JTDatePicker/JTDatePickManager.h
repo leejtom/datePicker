@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JTDatePicker.h"
-#import "JTStarAndEndTimePicker.h"
+#import "JTDatePickerHeader.h"
 
 typedef NS_ENUM(NSUInteger, JTDatePickerMode) {
 	JTDatePickerModeDateAndWeekday, //年月日周

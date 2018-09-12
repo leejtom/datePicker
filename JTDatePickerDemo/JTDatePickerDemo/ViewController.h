@@ -11,6 +11,8 @@
 @interface ViewController : UIViewController
 - (IBAction)yearMonthDayWeekAction:(UIButton *)sender;
 - (IBAction)startAndEndTimeAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *yearMonthDay;
+@property (weak, nonatomic) IBOutlet UILabel *startAndEndTime;
 
 @end
 

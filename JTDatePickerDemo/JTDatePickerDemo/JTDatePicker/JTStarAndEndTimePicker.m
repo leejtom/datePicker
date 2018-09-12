@@ -117,9 +117,7 @@
 	
 	[self updatePickerWithTag:pickerView.tag inComponent:component];
 	
-	if (self.isAutoSelect) {
-		[self tapSelectedHandler];
-	}
+
 }
 
 - (void)updateSelectData{
@@ -140,6 +138,9 @@
 				[self.endPickerView reloadAllComponents];
 				[self.endPickerView selectRow:0 inComponent:0 animated:YES];
 				[self.endPickerView selectRow:0 inComponent:1 animated:YES];
+				if (self.isAutoSelect) {
+					[self tapSelectedHandler];
+				}
 			});
 		});
 		
@@ -153,14 +154,22 @@
 					if(self->startHour == self->endHour){
 						[self.endPickerView selectRow:0 inComponent:1 animated:YES];
 					}
+					if (self.isAutoSelect) {
+						[self tapSelectedHandler];
+					}
 				});
 			});
+		}else{
+			if (self.isAutoSelect) {
+				[self tapSelectedHandler];
+			}
 		}
 	}
 }
 
 - (void)tapSelectedHandler{
 	if(_delegate && [_delegate respondsToSelector:@selector(datePicker:didSelectSartDateComponents:endDateComponents:)]){
+		[self updateSelectData];
 		NSDateComponents *startComp = [[NSDateComponents alloc] init];
 		NSDateComponents *endComp = [[NSDateComponents alloc] init];
 		startComp.hour = startHour;

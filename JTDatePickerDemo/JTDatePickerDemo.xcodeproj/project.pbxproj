@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55460C3420BFF7F300A364D1 /* JTGetJobs.m in Sources */ = {isa = PBXBuildFile; fileRef = 55460C3320BFF7F300A364D1 /* JTGetJobs.m */; };
 		554C903C2092D4FE00ABFFEF /* JTStarAndEndTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 554C903B2092D4FE00ABFFEF /* JTStarAndEndTimePicker.m */; };
 		554C90432093299400ABFFEF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 554C90422093299400ABFFEF /* libz.tbd */; };
 		554C90452093299C00ABFFEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554C90442093299C00ABFFEF /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55460C3220BFF7F300A364D1 /* JTGetJobs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTGetJobs.h; sourceTree = "<group>"; };
+		55460C3320BFF7F300A364D1 /* JTGetJobs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTGetJobs.m; sourceTree = "<group>"; };
 		554C903A2092D4FE00ABFFEF /* JTStarAndEndTimePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTStarAndEndTimePicker.h; sourceTree = "<group>"; };
 		554C903B2092D4FE00ABFFEF /* JTStarAndEndTimePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTStarAndEndTimePicker.m; sourceTree = "<group>"; };
 		554C903E2092FF8200ABFFEF /* JTDatePickerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTDatePickerHeader.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				55D47BA4209069FC006AF965 /* LaunchScreen.storyboard */,
 				55D47BA7209069FC006AF965 /* Info.plist */,
 				55D47BA8209069FC006AF965 /* main.m */,
+				55460C3220BFF7F300A364D1 /* JTGetJobs.h */,
+				55460C3320BFF7F300A364D1 /* JTGetJobs.m */,
 			);
 			path = JTDatePickerDemo;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			files = (
 				55D47B9E209069F2006AF965 /* ViewController.m in Sources */,
 				55D47BA9209069FC006AF965 /* main.m in Sources */,
+				55460C3420BFF7F300A364D1 /* JTGetJobs.m in Sources */,
 				55D47BC320906B47006AF965 /* NSDate+JTDate.m in Sources */,
 				55D47BC420906B47006AF965 /* UIColor+JTHex.m in Sources */,
 				55D47BC020906B47006AF965 /* JTDatePickerDelegate.m in Sources */,

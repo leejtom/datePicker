@@ -35,11 +35,11 @@
 
 #pragma mark - JTDatePickerDelegate
 - (void)datePicker:(JTDatePicker *)datePicker didSelectDateComponents:(NSDateComponents *)components{
-	NSLog(@"dateString：%@", components);
+	self.yearMonthDay.text =  [NSString stringWithFormat:@"%zd年%zd月%zd日 %@",components.year, components.month, components.day,[JTDateCommon weekdayStringFromInteger:components.weekday]];
 }
 
 #pragma mark - JTStarAndEndTimePickerDelegate
 - (void)datePicker:(JTStarAndEndTimePicker *)datePicker didSelectSartDateComponents:(NSDateComponents *)startCompon endDateComponents:(NSDateComponents *)endCompon{
-	NSLog(@"%02zd:%02zd - %02zd:%02zd", startCompon.hour, startCompon.minute, endCompon.hour, endCompon.minute);
+	self.startAndEndTime.text = [NSString stringWithFormat:@"%02zd:%02zd - %02zd:%02zd", startCompon.hour, startCompon.minute, endCompon.hour, endCompon.minute];
 }
 @end

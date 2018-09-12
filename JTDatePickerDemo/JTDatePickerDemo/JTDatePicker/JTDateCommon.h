@@ -17,8 +17,9 @@
  @param day 日
  @return 周几
  */
-+ (NSString *)weekdayIndexForYear:(NSString *)year month:(NSString *)month day:(NSString *)day;
-
++ (NSString *)weekdayIndexForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
++ (NSString *)weekdayStringFromInteger:(NSInteger)weekdy;
++ (NSString *)weekdayStringFromDateComponents:(NSDateComponents *)dateComponents;
 /**
  获取本月的最大天数
 

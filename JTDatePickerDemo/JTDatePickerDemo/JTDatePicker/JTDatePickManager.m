@@ -116,7 +116,7 @@
 	if (!_dismissView) {
 		_dismissView = [[UIView alloc] init];
 		_dismissView.backgroundColor = [UIColor blackColor];
-		_dismissView.alpha = 0.5;
+		_dismissView.alpha = 0.1;
 	}
 	return _dismissView;
 }

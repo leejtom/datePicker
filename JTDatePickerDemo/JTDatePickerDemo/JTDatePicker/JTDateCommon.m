@@ -63,6 +63,9 @@
 	}
 }
 
++ (NSString *)weekdayStringFromDateComponents:(NSDateComponents *)dateComponents{
+	return [self weekdayIndexForYear:dateComponents.year month:dateComponents.month day:dateComponents.day];
+}
 /**
  获取周几
  
@@ -71,8 +74,8 @@
  @param day 日
  @return 周几
  */
-+ (NSString *)weekdayIndexForYear:(NSString *)year month:(NSString *)month day:(NSString *)day{
-	NSString *dateString =  [NSString stringWithFormat:@"%@-%@-%@", year , month, day];
++ (NSString *)weekdayIndexForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day{
+	NSString *dateString =  [NSString stringWithFormat:@"%zd-%zd-%zd", year , month, day];
 	NSDateComponents *myDateComponents = [self dateComponentsWithTimeInterval:[self  getTimestampWithDateString:dateString formatter:@"YYYY-MM-dd"]];
 	
 	return [self weekdayStringFromInteger:myDateComponents.weekday];

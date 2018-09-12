@@ -27,6 +27,10 @@
 - (void)layoutSubviews{
 	[super layoutSubviews];
 	self.pickView.frame = self.bounds;
+	if (self.isAutoSelect) {
+		self.selectedDate = self.dateAndWeekdayList.firstObject;
+		[self tapSelectedHandler];
+	}
 }
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
 	return 1;
@@ -134,7 +138,7 @@
 				NSInteger dayStartIndex = (monthStartIndex==self.minimumComponents.month? self.minimumComponents.day : 1);
 				for (; dayStartIndex<= dayCount; dayStartIndex++) {
 					dayString = [@(dayStartIndex) stringValue];
-					weekdayString = [JTDateCommon weekdayIndexForYear:yearString month:monthString day:dayString];
+					weekdayString = [JTDateCommon weekdayIndexForYear:[yearString integerValue] month:[monthString integerValue] day:[dayString integerValue]];
 					yearMonthDay = [NSString stringWithFormat:@"%@年%@月%@日 %@", yearString, monthString, dayString, weekdayString];
 					[arrayM addObject:yearMonthDay];
 				}

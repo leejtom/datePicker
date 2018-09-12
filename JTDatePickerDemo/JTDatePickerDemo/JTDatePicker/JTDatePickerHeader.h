@@ -12,5 +12,7 @@
 #import "JTDateCommon.h"
 #import "NSDate+JTDate.h"
 #import "JTStarAndEndTimePicker.h"
+#import "JTDatePicker.h"
+#import "UIColor+JTHex.h"
 
 #endif /* JTDatePickerHeader_h */
